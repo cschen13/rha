@@ -6,7 +6,7 @@
 		<title>Northwestern RHA</title>
 		<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 		<link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection"/>
-		<link type="text/css" rel="stylesheet" href="css/styles.css">
+		<link type="text/css" rel="stylesheet" href="styles.css">
 	</head>
 	<body>
 		<header>
@@ -45,11 +45,11 @@
 								<img class="activator" src="assets/imgs/mayfest.jpg">
 							</div>
 							<div class="card-content">
-								<span class="card-title activator pink-text text-lighten-3">Mayfest<i class="material-icons right">more_vert</i></span>
+								<span class="card-title activator pink-text text-accent-2">Mayfest<i class="material-icons right">more_vert</i></span>
 								<p><span class="activator">Click on the image above to see how RHA offered a special reveal experience for residents with the blessing of Dillo Day organizers.</span></p>
 							</div>
 							<div class="card-reveal">
-								<span class="card-title pink-text text-lighten-3">Artist Reveal in Allison/Bobb<i class="material-icons right">close</i></span>
+								<span class="card-title pink-text text-accent-2">Artist Reveal in Allison/Bobb<i class="material-icons right">close</i></span>
 								<p>As part of RHA's sponsorship of Dillo Day in 2015, Mayfest allowed RHA to host listening parties at two residence halls, Bobb and Allison. Besides providing Andy's and Jamba Juice, RHA also exclusively unveiled the indie rock performer for that year, Saint Motel.</p>
 							</div>
 						</div>
@@ -60,12 +60,12 @@
 								<img class="activator" src="assets/imgs/nudm.jpg">
 							</div>
 							<div class="card-content">
-								<span class="card-title activator pink-text text-lighten-3">NU Dance Marathon<i class="material-icons right">more_vert</i></span>
+								<span class="card-title activator pink-text text-accent-2">NU Dance Marathon<i class="material-icons right">more_vert</i></span>
 								<p><span class="activator">See how NUDM worked with RHA to provide fundraising support for residents who needed a last-second push.</span></p>
 							</div>
 							<div class="card-reveal">
-								<span class="card-title pink-text text-lighten-3">Fundraising Subsidies<i class="material-icons right">close</i></span>
-								<p>The students of Mayfest offered exclusive rights to announcing one of the artists, even they fucked it all up for us when they teased the artist a little too much during one of their trailers.</p>
+								<span class="card-title pink-text text-accent-2">Fundraising Subsidies<i class="material-icons right">close</i></span>
+								<p>The students of Mayfest offered exclusive rights to announcing one of the artists, even t all up for us when they teased the artist a little too much during one of their trailers.</p>
 							</div>
 						</div>
 					</div>
@@ -75,33 +75,45 @@
 				<div class="center-align">
 					<h4>Still interested in a sponsorship from RHA?</h4>
 					<h4>Apply for funding on our Wildcat Connection page!</h4>
-					<a class="waves-effect waves-light btn pink lighten-3" href="https://northwestern.collegiatelink.net/organization/residencehallassociation/availableforms">Funding Application</a>
+					<a class="waves-effect waves-light btn pink accent-2" href="https://northwestern.collegiatelink.net/organization/residencehallassociation/availableforms">Funding Application</a>
 					<p><em>You will need to sign in with your NetID and password upon landing on Wildcat Connection.</em></p>
 				</div>
 			</div>
 		</main>
 
-		<footer class="page-footer green darken-4">
+		<footer class="page-footer green darken-1">
 			<div class="container">
 				<div class="row">
-					<div class="col s12 l6 center-align">
-						<a href="http://www.northwestern.edu/" target="_blank">Northwestern University</a>
+					<div class="col s12 l6">
+						<h5><a href="northwestern.edu" target="_blank"><img src="assets/imgs/northwestern_logo.png" height="25px"></a></h5>
+							<!-- <a href="http://www.northwestern.edu/living/" target="_blank">Residential Services</a> -->
 					</div>
-					<div class="col s12 l6 center-align">
-						<a href="http://www.northwestern.edu/living/" target="_blank">Residential Services</a>
+					<div class="col s12 offset-l2 l4">
+						<h5 class="white-text">Connect with Us</h5>
+						<ul>
+							<div id="fb-root"></div>
+							<li><div class="fb-like" data-href="https://www.facebook.com/NorthwesternRHA/" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div></li>
+							<li><a href="https://twitter.com/NU_RHA" class="twitter-follow-button" data-show-count="false">Follow @NU_RHA</a></li>
+						</ul>
 					</div>
+				</div>
+			</div>
+
+			<div class="footer-copyright">
+				<div class="container">
+					&copy; 2016 NU RHA
 				</div>
 			</div>
 		</footer>
 
-		<div id="fb-root"></div>
 		<script>(function(d, s, id) {
-  		var js, fjs = d.getElementsByTagName(s)[0];
-  		if (d.getElementById(id)) return;
-  		js = d.createElement(s); js.id = id;
-  		js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
-  		fjs.parentNode.insertBefore(js, fjs);
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id)) return;
+			js = d.createElement(s); js.id = id;
+			js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
+			fjs.parentNode.insertBefore(js, fjs);
 			}(document, 'script', 'facebook-jssdk'));</script>
+		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 
 		<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
 		<script type="text/javascript" src="js/materialize.min.js"></script>
