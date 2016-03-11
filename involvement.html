@@ -2,17 +2,18 @@
 <html lang="en-US">
 	<head>
 		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 		<title>Northwestern RHA</title>
 		<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 		<link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection"/>
-		<link type="text/css" rel="stylesheet" href="css/styles.css">
+		<link type="text/css" rel="stylesheet" href="styles.css">
 	</head>
 	<body>
 		<header>
 			<div class="navbar-fixed">
 				<nav>
 					<div class="nav-wrapper green darken-3">
-						<a href="index.html" class="brand-logo">Residence Hall Association</a>
+						<a href="index.html" class="brand-logo">NU RHA</a>
 						<a href="#" data-activates="nav-mobile" class="button-collapse nav-button"><i class="material-icons">menu</i></a>
 						<ul class="right hide-on-med-and-down">
 							<li><a href="structure.html">Structure</a></li>
@@ -44,18 +45,39 @@
 			</div>
 		</main>
 
-    <footer class="page-footer green darken-4">
+    <footer class="page-footer green darken-1">
 			<div class="container">
 				<div class="row">
-					<div class="col s12 l6 center-align">
-		        <a href="http://www.northwestern.edu/" target="_blank">Northwestern University</a>
-		      </div>
-		      <div class="col s12 l6 center-align">
-		        <a href="http://www.northwestern.edu/living/" target="_blank">Residential Services</a>
-		      </div>
+					<div class="col s12 l6">
+						<h5><a href="northwestern.edu" target="_blank"><img src="assets/imgs/northwestern_logo.png" height="25px"></a></h5>
+						<!-- <a href="http://www.northwestern.edu/living/" target="_blank">Residential Services</a> -->
+					</div>
+					<div class="col s12 offset-l2 l4">
+						<h5 class="white-text">Connect with Us</h5>
+						<ul>
+							<div id="fb-root"></div>
+							<li><div class="fb-like" data-href="https://www.facebook.com/NorthwesternRHA/" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div></li>
+							<li><a href="https://twitter.com/NU_RHA" class="twitter-follow-button" data-show-count="false">Follow @NU_RHA</a></li>
+						</ul>
+					</div>
 				</div>
 			</div>
-    </footer>
+
+			<div class="footer-copyright">
+				<div class="container">
+					&copy; 2016 NU RHA
+				</div>
+			</div>
+		</footer>
+
+		<script>(function(d, s, id) {
+  		var js, fjs = d.getElementsByTagName(s)[0];
+  		if (d.getElementById(id)) return;
+  		js = d.createElement(s); js.id = id;
+  		js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
+  		fjs.parentNode.insertBefore(js, fjs);
+			}(document, 'script', 'facebook-jssdk'));</script>
+		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 
 		<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
 		<script type="text/javascript" src="js/materialize.min.js"></script>

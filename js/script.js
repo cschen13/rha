@@ -1,4 +1,12 @@
 $(document).ready(function() {  
 	$(".button-collapse").sideNav();
-	$('.parallax').parallax();
+	$('.scrollspy').scrollSpy();
+	
+	$(window).scroll(function () {
+        if ($(document).scrollTop() > 150) {
+            $("nav").addClass("scrolled");
+        } else {
+            $("nav").removeClass("scrolled");
+        }
+    });
 });

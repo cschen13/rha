@@ -2,17 +2,19 @@
 <html lang="en-US">
 	<head>
 		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 		<title>Northwestern RHA</title>
 		<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 		<link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection"/>
-		<link type="text/css" rel="stylesheet" href="css/styles.css">
+		<link type="text/css" rel="stylesheet" href="styles.css">
 	</head>
 	<body>
+		<!-- Note to future self: Use AngularJS and ng-repeat next time. Pls. -->
 		<header>
 			<div class="navbar-fixed">
 				<nav>
 					<div class="nav-wrapper green darken-3">
-						<a href="index.html" class="brand-logo">Residence Hall Association</a>
+						<a href="index.html" class="brand-logo">NU RHA</a>
 						<a href="#" data-activates="nav-mobile" class="button-collapse nav-button"><i class="material-icons">menu</i></a>
 						<ul class="right hide-on-med-and-down">
 							<li><a href="structure.html">Structure</a></li>
@@ -24,31 +26,431 @@
 							<li><a href="structure.html">Structure</a></li>
 							<li><a href="involvement.html">Get Involved</a></li>
 							<li><a href="funding.html">Funding</a></li>
-							<li class="active"><a href="contact.html">Contact Us</a></li>
+							<li class="active">
+								<a href="contact.html">Contact Us</a>
+								<ul>
+									<li><a href="#exec">Exec. Board</a></li>
+						      <li><a href="#ACs">Area Councils</a></li>
+						      <li><a href="#PBs">Prog. Boards</a></li>
+						      <li><a href="#rescolleges">RC AC Reps</a></li>
+								</ul>
+							</li>
 						</ul>
 					</div>
 				</nav>
 			</div>
+
+			<div class="row" id="scroll-menu">
+				<div class="col hide-on-med-and-down offset-l10 l2">
+		    <ul class="section table-of-contents fixed hide-on-med-and-down">
+		      <li><a href="#exec">Exec. Board</a></li>
+		      <li><a href="#ACs">Area Councils</a></li>
+		      <li><a href="#PBs">Prog. Boards</a></li>
+		      <li><a href="#rescolleges">RC AC Reps</a></li>
+		    </ul>
+		  </div>
+		  </div>
 		</header>
 
 		<main>
 			<div class="container">
-			
-			</div>
-		</main>
+				<h2 class="green-text">Get in Touch</h2>
+				<p class="caption">Have questions about what RHA can do for you? Concerned about community life in on-campus residential buildings? Most of RHA is just an email away.</p>
+				<div class="divider"></div>
 
-    <footer class="page-footer green darken-4">
-			<div class="container">
-				<div class="row">
-					<div class="col s12 l6 center-align">
-		        <a href="http://www.northwestern.edu/" target="_blank">Northwestern University</a>
+				<div class="section scrollspy">
+					<a class="anchor" id="exec"></a>
+					<h3>Executive Board</h3>
+					<p>If you have any general questions about RHA, simply send an email to <a href="mailto:RHA@u.northwestern.edu">RHA@u.northwestern.edu</a> and we'll get back to you as soon as possible! Check out the cards of each Executive Board member below if you are interested in contacting a specific individual.</p>
+
+					<div class="row">
+		        <div class="col s12 l4">
+		          <div class="card medium">
+		            <div class="card-image activator waves-effect waves-block waves-light">
+		              <img src="assets/imgs/headshots/Jack_Heider.jpg">
+		              <span class="card-title">President</span>
+		            </div>
+		            <div class="card-content">
+		              <p><b>Jack Heider</b> (Senior)</p>
+		              <p><b>Major:</b> Chemical Engineering</p>
+		              <p><b>Current Residence:</b> Kemper Hall</p>
+		            </div>
+		            <div class="card-action">
+		              <a href="#">Email Jack</a>
+		            </div>
+		          </div>
+		        </div>
+		        <div class="col s12 l4">
+		          <div class="card medium">
+		            <div class="card-image">
+		              <img src="assets/imgs/headshots/Nathan_McCardel.jpg">
+		              <span class="card-title">Vice-President</span>
+		            </div>
+		            <div class="card-content">
+		              <p><b>Nathan McCardel</b> (Sophomore)</p>
+		              <p><b>Major:</b> Industrial Engineering</p>
+		              <p><b>Current Residence:</b> Allison Hall</p>
+		            </div>
+		            <div class="card-action">
+		              <a href="#">Email Nathan</a>
+		            </div>
+		          </div>
+		        </div>
+		        <div class="col s12 l4">
+		          <div class="card medium">
+		            <div class="card-image">
+		              <img src="assets/imgs/headshots/Jacob_Bard.jpg">
+		              <span class="card-title">Treasurer</span>
+		            </div>
+		            <div class="card-content">
+		              <p><b>Jacob Bard</b> (Sophomore)</p>
+		              <p><b>Major:</b> ChemE and Economics</p>
+		              <p><b>Current Residence:</b> Bobb Hall</p>
+		            </div>
+		            <div class="card-action">
+		              <a href="#">Email Jacob</a>
+		            </div>
+		          </div>
+		        </div>
 		      </div>
-		      <div class="col s12 l6 center-align">
-		        <a href="http://www.northwestern.edu/living/" target="_blank">Residential Services</a>
+		      <div class="row">
+		      	<div class="col s12 l4">
+		          <div class="card medium">
+		            <div class="card-image">
+		              <img src="assets/imgs/headshots/Jah_JeanLeger.jpg">
+		              <span class="card-title">Programming Chair</span>
+		            </div>
+		            <div class="card-content">
+		              <p><b>Jah Jean-Leger</b> (Junior)</p>
+		              <p><b>Major:</b> ???</p>
+		              <p><b>Current Residence:</b> 1835 Hinman</p>
+		            </div>
+		            <div class="card-action">
+		              <a href="#">Email Jah</a>
+		            </div>
+		          </div>
+		        </div>
+		        <div class="col s12 l4">
+		          <div class="card medium">
+		            <div class="card-image">
+		              <img src="assets/imgs/headshots/Ali_Movassaghi.jpg">
+		              <span class="card-title">Programming Chair</span>
+		            </div>
+		            <div class="card-content">
+		              <p><b>Ali Movassaghi</b> (Sophomore)</p>
+		              <p><b>Major:</b> ???</p>
+		              <p><b>Current Residence:</b> Bobb Hall</p>
+		            </div>
+		            <div class="card-action">
+		              <a href="#">Email Ali</a>
+		            </div>
+		          </div>
+		        </div>
+		        <div class="col s12 l4">
+		          <div class="card medium">
+		            <div class="card-image">
+		              <img src="assets/imgs/headshots/Chris_Chen.jpg">
+		              <span class="card-title">Publicity Chair</span>
+		            </div>
+		            <div class="card-content">
+		              <p><b>Chris Chen</b> (Sophomore)</p>
+		              <p><b>Major:</b> Computer Science</p>
+		              <p><b>Current Residence:</b> Green House</p>
+		            </div>
+		            <div class="card-action">
+		              <a href="#">Email Chris</a>
+		            </div>
+		          </div>
+		        </div>
 		      </div>
+		    </div>
+				<div class="divider"></div>
+
+				<div class="section">
+		      <a class="anchor" id="ACs"></a>
+		      <h3>Area Councils</h3>
+		      <p>Contact an Area Council (AC) when you would like to discuss an issue related to your individual neighborhood or if you would like your neighborhood to interact in some way with a different one.</p>
+		      <p>Need a refresher on the structure of RHA and/or which neighborhood you reside in? <a href="structure.html">Click here to read more about how we are organized!</a></p>
+		      <div class="row">
+		      	<div class="col s12 l4">
+		          <div class="card medium">
+		            <div class="card-image">
+		              <img src="assets/imgs/allison.jpg">
+		              <span class="card-title">Allison AC</span>
+		            </div>
+		            <div class="card-content">
+		              <p><b>President:</b> Jimmy Song</p>
+		              <p><b>Vice-President:</b> Jing Gao</p>
+		              <p><b>Secretary:</b> Benjamen Lim</p>
+		            </div>
+		            <div class="card-action">
+		              <a href="#">Email Allison AC</a>
+		            </div>
+		          </div>
+		        </div>
+		        <div class="col s12 l4">
+		          <div class="card medium">
+		            <div class="card-image">
+		              <img src="assets/imgs/plex.jpg">
+		              <span class="card-title">Foster-Walker AC</span>
+		            </div>
+		            <div class="card-content">
+		              <p><b>President:</b> John Paul Wang</p>
+		              <p><b>Vice-President:</b> Leigh Arn</p>
+		              <p><b>Secretary:</b> VACANT</p>
+		            </div>
+		            <div class="card-action">
+		              <a href="#">Email Foster-Walker AC</a>
+		            </div>
+		          </div>
+		        </div>
+		        <div class="col s12 l4">
+		          <div class="card medium">
+		            <div class="card-image">
+		              <img src="assets/imgs/kemper.jpg">
+		              <span class="card-title">Kemper AC</span>
+		            </div>
+		            <div class="card-content">
+		              <p><b>President:</b> Sophie Anolick</p>
+		              <p><b>Vice-President:</b> Graham Ferguson</p>
+		              <p><b>Secretary:</b> Alexandra Schnarre</p>
+		            </div>
+		            <div class="card-action">
+		              <a href="#">Email Kemper AC</a>
+		            </div>
+		          </div>
+		        </div>
+		      </div>
+		     </div>
+				<div class="divider"></div>
+
+				<div class="section">
+					<a class="anchor" id="PBs"></a>
+					<h3>Programming Boards</h3>
+					<p>Contact a Programming Board when you are interested in organizing an event or obtaining information about a specific residence hall.</p>
+		      <ul class="collapsible" data-collapsible="expandable">
+						<li>
+				      <div class="collapsible-header"><b> 1835 Hinman</b></div>
+				      <div class="collapsible-body">
+				      	<ul>
+				      		<li><b>AC Rep:</b> </li>
+				      		<li><b>Treasurer:</b> </li>
+				      		<li><b>Secretary:</b> </li>
+				      		<li><b>Programming Chair:</b> </li>
+				      	</ul>
+				      </div>
+				    </li>
+				    <li>
+				      <div class="collapsible-header"><b> 1856 Orrington</b></div>
+				      <div class="collapsible-body">
+				      	<ul>
+				      		<li><b>AC Rep:</b> </li>
+				      		<li><b>Treasurer:</b> </li>
+				      		<li><b>Secretary:</b> </li>
+				      		<li><b>Programming Chair:</b> </li>
+				      	</ul>
+				      </div>
+				    </li>
+				    <li>
+				      <div class="collapsible-header"><b> Allison Hall</b></div>
+				      <div class="collapsible-body">
+				      	<ul>
+				      		<li><b>AC Rep:</b> </li>
+				      		<li><b>Treasurer:</b> </li>
+				      		<li><b>Secretary:</b> </li>
+				      		<li><b>Programming Chair:</b> </li>
+				      	</ul>
+				      </div>
+				    </li>
+				    <li>
+				      <div class="collapsible-header"><b> Bobb-McCulloch Hall</b></div>
+				      <div class="collapsible-body">
+				      	<ul>
+				      		<li><b>AC Rep:</b> </li>
+				      		<li><b>Treasurer:</b> </li>
+				      		<li><b>Secretary:</b> </li>
+				      		<li><b>Programming Chair:</b> </li>
+				      	</ul>
+				      </div>
+				    </li>
+				    <li>
+				      <div class="collapsible-header"><b> Elder Hall</b></div>
+				      <div class="collapsible-body">
+				      	<ul>
+				      		<li><b>AC Rep:</b> </li>
+				      		<li><b>Treasurer:</b> </li>
+				      		<li><b>Secretary:</b> </li>
+				      		<li><b>Programming Chair:</b> </li>
+				      	</ul>
+				      </div>
+				    </li>
+				    <li>
+				      <div class="collapsible-header"><b> Foster-Walker Hall</b></div>
+				      <div class="collapsible-body">
+				      	<ul>
+				      		<li><b>AC Rep:</b> </li>
+				      		<li><b>Treasurer:</b> </li>
+				      		<li><b>Secretary:</b> </li>
+				      		<li><b>Programming Chair:</b> </li>
+				      	</ul>
+				      </div>
+				    </li>
+				    <li>
+				      <div class="collapsible-header"><b> Kemper Hall</b></div>
+				      <div class="collapsible-body">
+				      	<ul>
+				      		<li><b>AC Rep:</b> </li>
+				      		<li><b>Treasurer:</b> </li>
+				      		<li><b>Secretary:</b> </li>
+				      		<li><b>Programming Chair:</b> </li>
+				      	</ul>
+				      </div>
+				    </li>
+				    <li>
+				      <div class="collapsible-header"><b> Lindgren House</b></div>
+				      <div class="collapsible-body">
+				      	<ul>
+				      		<li><b>AC Rep:</b> </li>
+				      		<li><b>Treasurer:</b> </li>
+				      		<li><b>Secretary:</b> </li>
+				      		<li><b>Programming Chair:</b> </li>
+				      	</ul>
+				      </div>
+				    </li>
+				    <li>
+				      <div class="collapsible-header"><b> Rogers House</b></div>
+				      <div class="collapsible-body">
+				      	<ul>
+				      		<li><b>AC Rep:</b> </li>
+				      		<li><b>Treasurer:</b> </li>
+				      		<li><b>Secretary:</b> </li>
+				      		<li><b>Programming Chair:</b> </li>
+				      	</ul>
+				      </div>
+				    </li>
+				    <li>
+				      <div class="collapsible-header"><b> Sargent Hall</b></div>
+				      <div class="collapsible-body">
+				      	<ul>
+				      		<li><b>AC Rep:</b> </li>
+				      		<li><b>Treasurer:</b> </li>
+				      		<li><b>Secretary:</b> </li>
+				      		<li><b>Programming Chair:</b> </li>
+				      	</ul>
+				      </div>
+				    </li>
+		      </ul>
+		     </div>
+	      <div class="divider"></div>
+
+				<div class="section">
+		      <a class="anchor" id="rescolleges"></a>
+		      <h3>Residential College Area Council Representatives</h3>
+					<p>The following table lists the Area Council Representative in each Residential College on campus. These representatives represent the connection between residence halls and the Residential College system. Until the Residential Colleges are more fully integrated under RHA, these positions allow students living in residential colleges to communicate with Area Councils about residential life.</p>
+					<div class="row">
+						<div class="col s12 l6 center-align">
+							<table class="bordered">
+				        <thead>
+				          <tr>
+				              <th data-field="id">Residential College</th>
+				              <th data-field="name">AC Rep</th>
+			<!-- 	              <th data-field="price">Contact Email</th> -->
+				          </tr>
+				        </thead>
+
+				        <tbody>
+				          <tr>
+				            <td>ACCI</td>
+				            <td>Jessica Sun</td>
+				          </tr>
+				          <tr>
+				            <td>CCS</td>
+				            <td>Chris Hartman</td>
+				          </tr>
+				          <tr>
+				            <td>Chapin</td>
+				            <td>Maria Feiler</td>
+				          </tr>
+				          <tr>
+				            <td>CRC</td>
+				            <td>Jesus Campos</td>
+				          </tr>
+				          <tr>
+				            <td>ISRC</td>
+				            <td>Samuel Trotter</td>
+				          </tr>
+				          <tr>
+				            <td>Jones</td>
+				            <td>Anna Backer</td>
+				          </tr>
+				          <tr>
+				            <td>PARC</td>
+				            <td>Sylvia Regan</td>
+				          </tr>
+				          <tr>
+				            <td>Shepard</td>
+				            <td>Nick Ahern</td>
+				          </tr>
+				          <tr>
+				            <td>Slivka</td>
+				            <td>Austin Dickey</td>
+				          </tr>
+				          <tr>
+				            <td>Willard</td>
+				            <td>Matthew Guzman</td>
+				          </tr>
+				          <tr>
+				            <td>WRC</td>
+				            <td>Faye Oyang</td>
+				          </tr>
+				        </tbody>
+				      </table>
+				    </div>
+				  </div>
 				</div>
 			</div>
-    </footer>
+			
+
+			
+
+
+			
+		</main>
+
+    <footer class="page-footer green darken-1">
+			<div class="container">
+				<div class="row">
+					<div class="col s12 l6">
+						<h5><a href="northwestern.edu" target="_blank"><img src="assets/imgs/northwestern_logo.png" height="25px"></a></h5>
+						<!-- <a href="http://www.northwestern.edu/living/" target="_blank">Residential Services</a> -->
+					</div>
+					<div class="col s12 offset-l2 l4">
+						<h5 class="white-text">Connect with Us</h5>
+						<ul>
+							<div id="fb-root"></div>
+							<li><div class="fb-like" data-href="https://www.facebook.com/NorthwesternRHA/" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div></li>
+							<li><a href="https://twitter.com/NU_RHA" class="twitter-follow-button" data-show-count="false">Follow @NU_RHA</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div class="footer-copyright">
+				<div class="container">
+					&copy; 2016 NU RHA
+				</div>
+			</div>
+		</footer>
+
+		
+		<script>(function(d, s, id) {
+  		var js, fjs = d.getElementsByTagName(s)[0];
+  		if (d.getElementById(id)) return;
+  		js = d.createElement(s); js.id = id;
+  		js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
+  		fjs.parentNode.insertBefore(js, fjs);
+			}(document, 'script', 'facebook-jssdk'));</script>
+		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 
 		<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
 		<script type="text/javascript" src="js/materialize.min.js"></script>
