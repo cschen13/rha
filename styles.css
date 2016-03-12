@@ -42,6 +42,10 @@ main a {
 #list-accomplishments li {
 	list-style-type: disc;
 }
+
+.tabs .tab a {
+	color:#ff4081;
+}
 /*GENERAL FORMATTING ENDS*/
 
 /*LANDING STYLE*/
@@ -76,7 +80,7 @@ nav {
 }
 
 .scrolled {
-    background-color: #1b5e20;
+    background-color: #2e7d32;
     box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
 }
 
